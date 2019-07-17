@@ -1,0 +1,74 @@
+[
+  {
+    "id": 0,
+    "name": "beirtan-fortifies-church",
+    "image": "assets/images/biertan-fortified-church.jpg",
+    "isClicked": false
+  },
+  {
+    "id": 1,
+    "name": "dracula-castle-bran",
+    "image": "assets/images/dracula-castle-bran.jpg",
+    "isClicked": false
+  },
+  {
+    "id": 2,
+    "name": "corvin-medieval-castle",
+    "image": "assets/images/corvin-medieval-castle.jpg",
+    "isClicked": false
+  },
+  {
+    "id": 3,
+    "name": "bouzov-castle",
+    "image": "assets/images/bouzov-castle.jpg",
+    "isClicked": false
+  },
+  {
+    "id": 4,
+    "name": "nagoya-castle",
+    "image": "assets/images/nagoya-castle.jpg",
+    "isClicked": false
+  },
+  {
+    "id": 5,
+    "name": "trim-castle",
+    "image": "assets/images/trim-castle.jpg",
+    "isClicked": false
+  },
+  {
+    "id": 6,
+    "name": "the-royal-castle",
+    "image": "assets/images/the-royal-castle.jpg",
+    "isClicked": false
+  },
+  {
+    "id": 7,
+    "name": "warwick-castle",
+    "image": "assets/images/warwick-castle.jpg",
+    "isClicked": false
+  },
+  {
+    "id": 8,
+    "name": "svojanor-castle",
+    "image": "assets/images/svojanov-castle.jpg",
+    "isClicked": false
+  },
+  {
+    "id": 9,
+    "name": "steinau-castle",
+    "image": "assets/images/steinau-castle.jpg",
+    "isClicked": false
+  },
+  {
+    "id": 10,
+    "name": "sims-4-castle",
+    "image": "assets/images/sims-4-castle.jpg",
+    "isClicked": false
+  },
+  {
+    "id": 11,
+    "name": "mainz-castle",
+    "image": "assets/images/mainz-castle.jpg",
+    "isClicked": false
+  }
+]
