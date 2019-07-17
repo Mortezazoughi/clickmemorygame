@@ -7,7 +7,7 @@ import characters from './characters.json';
 import './App.css';
 
 class App extends Component {
-  // Setting the initial state of the App component
+  // SETTING THE STATE
   constructor() {
     super();
 
@@ -18,7 +18,7 @@ class App extends Component {
     score: 0,
     topScore: 0,
     maxScore: 12,
-    message: 'Click an image to begin!',
+    message: ' ',
     messageClass: '',
     characters: characters
   };
@@ -28,13 +28,12 @@ class App extends Component {
     let temporaryValue;
     let randomIndex;
 
-    // While there remain elements to shuffle...
+    // SHUFFLING THE IMAGES
     while (0 !== currentIndex) {
-      // Pick a remaining element...
       randomIndex = Math.floor(Math.random() * currentIndex);
       currentIndex -= 1;
 
-      // And swap it with the current element.
+      // SWAPING THE IMAGES
       temporaryValue = array[currentIndex];
       array[currentIndex] = array[randomIndex];
       array[randomIndex] = temporaryValue;
@@ -50,23 +49,23 @@ class App extends Component {
     if (this.state.score + 1 === this.state.maxScore) {
       this.setState({
         score: this.state.score + 1,
-        message: 'Congrats! You win!',
+        message: 'You win!',
         messageClass: 'correct'
       });
     } else {
       this.setState({
         score: this.state.score + 1,
-        message: 'You guessed correctly!',
+        message: 'Way To Go',
         messageClass: 'correct'
       });
     }
   };
 
   handleResetWin = currentCharacters => {
-    //if current score is at max reset score to 0 and topscore to 0
+    //IF SCORE IOD 12, THEN RESETTING THE SCORE
     if (this.state.score + 1 === this.state.maxScore) {
       this.setState({ score: 0, topScore: 0 });
-      //reset clicked state for characters
+
       const updatedCharacters = currentCharacters.map(ch =>
         true ? { ...ch, isClicked: false } : ch
       );
@@ -77,9 +76,9 @@ class App extends Component {
   };
 
   handleIncorrectSelection = () => {
-    //incorrect selection made, reset score to 0
+    //DISPLAYING GAME OVER MESSAGE
     this.setState({ score: 0, message: 'Sorry, Game Over' });
-    //reset clicked state for characters
+    //RESET THE STATE
     const updatedCharacters = this.state.characters.map(ch =>
       ch.isClicked === true ? { ...ch, isClicked: false } : ch
     );
@@ -87,10 +86,8 @@ class App extends Component {
   };
 
   handleShuffleChararcters = name => {
-    // this.handleResetWin();
     var resetNeeded = false;
     const characters = this.state.characters.map(ch => {
-      //ch.name === name ? { ...ch, isClicked: true } : ch
       if (ch.name === name) {
         if (ch.isClicked === false) {
           this.handleCorrectSelection();
@@ -109,7 +106,7 @@ class App extends Component {
         messageClass: 'incorrect'
       });
     } else {
-      //check if game is won before rendering characters
+      //CHECK TO SEE IF PLAYER WON
       this.setState({
         characters: this.shuffle(this.handleResetWin(characters))
       });
@@ -145,6 +142,8 @@ class App extends Component {
 }
 
 export default App;
+
+// ORIGINALLY TESTING THE COMPONENTS
 
 // function App() {
 //   return (
