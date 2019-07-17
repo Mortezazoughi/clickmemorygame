@@ -16,11 +16,11 @@ export default function Footer() {
     <div className={classes.root} style={{ backgroundColor: 'teal' }}>
       <Grid container spacing={3}>
         <Grid item xs={6} sm={3} style={{ marginLeft: '10%' }}>
-          <h2>Click Memory Game</h2>
+          <h2 style={{ color: 'white' }}>Click Memory Game</h2>
         </Grid>
 
         <Grid item xs={6} sm={3} style={{ marginLeft: '40%' }}>
-          <h3>Morteza Zoughi</h3>
+          <h3 style={{ color: 'white' }}>Morteza Zoughi</h3>
         </Grid>
       </Grid>
     </div>
