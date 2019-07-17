@@ -19,7 +19,7 @@ const headerStyle = {
   color: '#fff',
   minHeight: '90px',
   backgroundSize: 'cover',
-  padding: '105px 60px 40px 40px',
+  padding: '85px 60px 5px 40px',
   textAlign: 'right'
 };
 
